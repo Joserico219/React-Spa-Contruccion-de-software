@@ -137,7 +137,7 @@ const Citas = () => {
         </div>
       )}
 
-      <form className="formulario" onSubmit={handleSubmit}>
+      <form className="formulario" onSubmit={handleSubmit} noValidate>
         <div className="formulario__grupo">
           <label className="formulario__label" htmlFor="nombre">Nombre completo *</label>
           <input type="text" id="nombre" name="nombre"
