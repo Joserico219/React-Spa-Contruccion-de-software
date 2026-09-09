@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Inicio/Inicio.css';
 import './Citas.css';
 
-const API_URL = 'http://localhost:3001/api/citas';
+const API_URL = `${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/citas`;
 
 const Citas = () => {
   const [formData, setFormData] = useState({
