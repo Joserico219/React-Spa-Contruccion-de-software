@@ -1,0 +1,150 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.formulario__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario__label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.formulario__input {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.formulario__input:focus {
+  outline: none;
+  border-color: #111111;
+}
+
+.formulario__input--error {
+  border-color: #c0392b;
+}
+
+.formulario__textarea {
+  resize: vertical;
+}
+
+.formulario__error {
+  font-size: 0.8rem;
+  color: #c0392b;
+}
+
+.formulario__btn {
+  align-self: flex-start;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+
+.formulario__btn:hover {
+  background-color: #333333;
+}
+
+.alerta {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.alerta--error {
+  background-color: #fdecea;
+  color: #c0392b;
+  border: 1px solid #f5c6c0;
+}
+
+.alerta--exito {
+  background-color: #eafaf1;
+  color: #1e7e45;
+  border: 1px solid #b7ebc9;
+}
+
+.alerta__retry {
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: inherit;
+  font-size: 0.8rem;
+}
+
+.cargando {
+  margin-top: 20px;
+  color: #777777;
+  font-style: italic;
+}
+
+.citas-lista {
+  margin-top: 32px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.citas-lista__items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.citas-lista__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 12px 16px;
+}
+
+.citas-lista__nombre {
+  font-weight: 600;
+  color: #111111;
+}
+
+.citas-lista__detalle {
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+.citas-lista__cancelar {
+  background: none;
+  border: 1px solid #c0392b;
+  color: #c0392b;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.citas-lista__cancelar:hover {
+  background-color: #c0392b;
+  color: #ffffff;
+}
